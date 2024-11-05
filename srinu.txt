@@ -1,0 +1,508 @@
+ An elephant decided to visit his friend. It turned out that the elephant's house is located at point 0 and his friend's house is located at point x(x > 0) of the coordinate line. In one step the elephant can move 1, 2, 3, 4 or 5 positions forward. Determine, what is the minimum number of steps he need to make in order to get to his friend's house.
+
+Input
+The first line of the input contains an integer x (1 ≤ x ≤ 1 000 000) — The coordinate of the friend's house.
+
+def min_step(x):
+    full_steps = x // 5
+    remaining = x % 5
+    if remaining == 0:
+        return full_steps
+    else:
+        return full_steps + 1
+# Read input
+x = int(input("Enter the coordinate of the friend's house (x): ").strip())
+print(min_step(x))
+ 
+
+Bear Limak wants to become the largest of bears, or at least to become larger than his brother Bob.
+
+Right now, Limak and Bob weigh a and b respectively. It's guaranteed that Limak's weight is smaller than or equal to his brother's weight.
+
+Limak eats a lot and his weight is tripled after every year, while Bob's weight is doubled after every year.
+
+After how many full years will Limak become strictly larger (strictly heavier) than Bob?
+
+Input
+The only line of the input contains two integers a and b (1 ≤ a ≤ b ≤ 10) — the weight of Limak and the weight of Bob respectively.
+
+
+def years_until_limak_wins(a, b):                                  limak=int("entetr the weight")
+    years = 0                                                      bob=int (input("enter the weight"))
+    while a <= b:                                                   year=0
+        a *= 3  # Limak's weight triples                           whlie(limak<=bob):
+        b *= 2  # Bob's weight doubles                                  limake*=3  
+        years += 1                                                      bob*=2
+    return years                                                        year+=1
+a, b = map(int, input().split())                                   print(year)
+result = years_until_limak_wins(a, b)
+print(result)
+
+
+
+
+
+n=int(input())
+m=int(input())
+a=int(input())
+b=int(input())
+if(m*a<b):
+    print(n*a)
+else:
+    print((n//m)*b+min(a*(n%m),b))
+
+
+
+
+public class main
+{
+public satic void main (string[]args){
+int a=10,b=20,sum;
+sum=a+b;
+system.out.println("sum is:"+sum);
+}}
+
+
+public static void main(string[]arg)
+{
+int a;
+scanner scan= new scanner(system.in);
+system.out.print("enter the int value:");
+a=scan.nextlnt("a=a"+a);
+}
+
+********************************************************************************8
+java t point website
+
+
+public class customer{
+    public static void main(string[] args){
+        string customertype="regular";
+        int quantity=2;
+        int unitprice=10;
+        int totacost=0;
+        int discount=5;
+        totalcost=unitprice*qunatit;
+        if (customertype=="regular"){
+            totalcost=totalcost-(totacost*discount/100);
+            system.out.println("eligible for 5% discount");
+            }
+            system.out.println("totalcost:"+totacost);
+        }
+}
+
+
+
+
+*****************************************************************************************
+
+
+import java.util.Scanner;
+public class EvenOdd {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int num = sc.nextInt();
+        if (num % 2 == 0) {
+            System.out.println(num + " is even.");
+        } else {
+            System.out.println(num + " is odd.");
+        }
+    }
+}
+
+*********************************************************************
+
+import java.util.Scanner;
+
+public class LeapYear {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a year:");
+        int year = sc.nextInt();
+
+        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+            System.out.println(year + " is a leap year.");
+        } else {
+            System.out.println(year + " is not a leap year.");
+        }
+    }
+}
+
+***************************************************************8
+
+import java.util.Scanner;
+
+public class GreatestNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter three numbers:");
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+        int num3 = sc.nextInt();
+
+        int greatest = num1;
+        if (num2 > greatest) greatest = num2;
+        if (num3 > greatest) greatest = num3;
+
+        System.out.println("The greatest number is: " + greatest);
+    }
+}
+***********************************************************************
+
+import java.util.Scanner;
+public class EvenOdd {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int num = sc.nextInt();
+        int i,n;
+        for (i=1;i<=num;i++){
+            n=i*i*i;
+        if (n == num) {
+            System.out.println(num + " is perfect cube");
+            break;
+        }
+        else if (n>num){
+             System.out.println(num + " is not perfect cube");
+             break;
+        }
+        }
+    }
+}
+*********************************************************************************
+
+import java.util.Scanner;
+public class EvenOdd {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int num = sc.nextInt();
+        int i,n;
+        for (i=1;i<=num;i++){
+            n=i*i;
+        if (n == num) {
+            System.out.println(num + " is perfect square");
+            break;
+        }
+        else if (n>num){
+             System.out.println(num + " is not perfect square");
+             break;
+        }
+        }
+    }
+}
+***********************************************************************
+
+
+import java.util.Scanner;
+public class EvenOdd {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int num = sc.nextInt();
+        switch (num) {
+            case 1:System.out.println( "January");
+                break;
+            case 2:System.out.println("February");
+                break;
+            case 3:System.out.println("March");
+                break;
+            case 4:System.out.println( "April");
+                break;
+            case 5:System.out.println("May");
+                break;
+            case 6:System.out.println("June");
+                break;
+            case 7:System.out.println( "July");
+                break;
+            case 8:System.out.println( "August");
+                break;
+            case 9:System.out.println( "September");
+                break;
+            case 10:System.out.println( "October");
+                break;
+            case 11:System.out.println( "November");
+                break;
+            case 12:System.out.println( "December");
+                break;
+            default:System.out.println( "Invalid month number. Please enter a number between 1 and 12.");
+               break;
+        }
+    }
+}
+
+
+import java.util.Scanner;
+
+public class MonthFinder {
+
+    public static String getMonth(int number) {
+        switch (number) {
+            case 1:
+                return "January";
+            case 2:
+                return "February";
+            case 3:
+                return "March";
+            case 4:
+                return "April";
+            case 5:
+                return "May";
+            case 6:
+                return "June";
+            case 7:
+                return "July";
+            case 8:
+                return "August";
+            case 9:
+                return "September";
+            case 10:
+                return "October";
+            case 11:
+                return "November";
+            case 12:
+                return "December";
+            default:
+                return "Invalid month number. Please enter a number between 1 and 12.";
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter a month number (1-12): ");
+        int monthNumber = scanner.nextInt();
+        
+        String monthName = getMonth(monthNumber);
+        System.out.println("The month is: " + monthName);
+        
+        scanner.close();
+    }
+}
+***************************************************************************
+
+
+
+
+
+import java.util.Scanner;
+public class shiva{
+    public static void main(String[] args) {
+        int i;
+        for(i=1;i<=100;i++){
+            if(i%2!=0)
+         System.out.println(i);   
+        }
+    }
+}
+************************************************************************
+********************************************natural numbers******************************************
+import java.util.Scanner;
+public class shiva{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int num = sc.nextInt();
+        int i;
+        for(i=1;i<=num;i++){
+         System.out.println(i);   
+        }
+    }
+}
+*****************************************************************************************
+
+import java.util.Scanner;
+public class shiva{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int num = sc.nextInt();
+        int rev=0,d;
+        while(num!=0){
+            d=num%10;
+            rev=rev*10+d;
+            num=num/10;
+        }
+        System.out.println(rev);  
+    }
+}
+*******************************************************************************************
+
+
+import java.util.Scanner;
+public class ArmstrongNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int n = sc.nextInt();
+        int original = n;
+        int sum = 0;
+
+        while (n != 0) {
+            int digit = n % 10;
+            sum += Math.pow(digit, 3);
+            n /= 10;
+        }
+
+        if (sum == original) {
+            System.out.println(original + " is an Armstrong number.");
+        } else {
+            System.out.println(original + " is not an Armstrong number.");
+        }
+    }
+}
+
+************************************************************************************************
+for(int i=1;i<=n;i++)
+//code
+}for(int 1=1;i<=n+5;i++){
+}
+for(int i=1;1<=n;i+=2)
+
+
+
+**********************************************************************************************
+ loop---->o(n)
+nested loop ---->o(n)----->based on the intensity no.of listed loops
+sorting------>o(nlog n)
+
+
+********************************************************************************************
+ if(n%4==1)
+   print(1)
+if(n%4==2)
+   print(n+1)
+if(n%4==3)
+   print(0)
+if(n%4==6)
+   print(n)
+
+***********************************************************************************************
+5/11/2024
+-------------------
+import java.util.Scanner;
+public class main{
+    public static void main(String[] args);
+    System.out.println("Enter the key to search:");
+    int key= Scan.nextInt();
+    int index=0,count=0;
+    for(int i=0;i<size;i++){
+        if(array[i]==key){
+            count++;
+            index=i;
+            break;
+        }
+    }
+    if(count>0) 
+    System.Out.println("Yes element in index",+index);
+    else 
+    System.Out.println("Element not there in array ");
+}
+
+*******************************************************************************************************
+
+if(air[mid]==key)count++
+if(air[mid]>key)e=m-1
+if(air[mid]<key)e=m+1
+  *****binary search works for sorted array not normal array*******************
+
+****************************************************************************************************
+import java.util.Scanner;
+public class main{
+    public static void main(String[] args);
+    System.out.println("Enter the key to search:");
+    int key= Scan.nextInt();
+    int index=-1,s=0,e=size -1;
+    while (s<=0){
+        int m=s +(e-s)/2;
+        if(array[m]==key){
+            count++;
+            index=m;
+            break;
+        }
+            if(array [m]>key)e=m-1;
+            else s=m+1;
+    }
+    if(index !=-1)
+    System.Out.println("Yes element in index",+index);
+    else 
+    System.Out.println("Element not there in array ");
+}
+******************************************************************************************************
+
+public class CountOnesAndZeros {
+    public static void main(String[] args) {
+        int[] array = {1, 0, 1, 1, 0, 0, 1, 0, 1};  
+        int countOnes = 0;
+        int countZeros = 0;
+
+        for (int num : array) {
+            if (num == 1) {
+                countOnes++;
+            } else if (num == 0) {
+                countZeros++;
+            }
+        }
+
+        System.out.println("Number of 1s: " + countOnes);
+        System.out.println("Number of 0s: " + countZeros);
+    }
+}
+*****************************************************************************************
+
+public class ReversePrintArray {
+    public static void main(String[] args) {
+        int[] array = {1, 2, 3, 4, 5};
+        System.out.println("Array in reverse order:");
+        for (int i = array.length - 1; i >= 0; i--) {
+            System.out.print(array[i] + " ");
+        }
+    }
+}
+****************************************************************************************
+
+
+public class ReverseArray {
+    public static void main(String[] args) {
+        int[] array = {1, 2, 3, 4, 5};
+        reverseArray(array);
+        System.out.println("Reversed array:");
+        for (int num : array) {
+            System.out.print(num + " ");
+        }
+    }
+    public static void reverseArray(int[] array) {
+        int left = 0;
+        int right = array.length - 1;
+        while (left < right) {
+            int temp = array[left];
+            array[left] = array[right];
+            array[right] = temp;
+            left++;
+            right--;
+        }
+    }
+}
+*******************************************************************************************
+
+public class ReverseOneHalfArray {
+    public static void main(String[] args) {
+        int[] array = {1, 2, 3, 4, 5, 6, 7, 8};
+        reverseFirstHalf(array);
+        System.out.println("Array after reversing the first half:");
+        for (int num : array) {
+            System.out.print(num + " ");
+        }
+    }
+    public static void reverseFirstHalf(int[] array) {
+        int mid = array.length / 2; 
+        for (int i = 0; i < mid / 2; i++) {
+            int temp = array[i];
+            array[i] = array[mid - 1 - i];
+            array[mid - 1 - i] = temp;
+        }
+    }
+}
+*******************************************************************************************
+
